@@ -15,10 +15,10 @@
 public class Perro {
     // Definimos los atributos de la clase Perro
     String nombre;
-    int edad;
-    int nivelEnergia;
-    int nivelHambre;
-    String estadoAnimo;
+    private int edad;
+    private int nivelEnergia;
+    private int nivelHambre;
+    private String estadoAnimo;
 
     // Definimos el constructor de la clase Perro con parametros nombre y edad
     public Perro(String nombre, int edad){
