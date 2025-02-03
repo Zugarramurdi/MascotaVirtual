@@ -3,22 +3,24 @@
  * - Clase Perro
  *     En esta clase se definen los atributos y metodos de la clase Perro.
  *     Se definen los atributos nombre, edad, nivelEnergia, nivelHambre y estadoAnimo.
+ *     Se define un atributo estatico numPerros para contar el numero de perros creados, es publico para poder acceder a el desde la clase Main.
  *     Se definen los metodos comer(), jugar(), dormir() y mostrarEstado().
  *     Se definen los getters y setters de los atributos.
  *     Se define un constructor con parametros nombre y edad.
  *     Se valida que los niveles de hambre y energia no sean menores a 0 ni mayores a 100.
  *     Se define el estado de animo segun los niveles de hambre y energia.
  *
- * - Autor: Juanma Segura - DAM
+ *  @Autor: Juanma Segura - DAM
  */
 
 public class Perro {
     // Definimos los atributos de la clase Perro
-    String nombre;
+    private String nombre;
     private int edad;
     private int nivelEnergia;
     private int nivelHambre;
     private String estadoAnimo;
+    public static int numPerros = 0;
 
     // Definimos el constructor de la clase Perro con parametros nombre y edad
     public Perro(String nombre, int edad){
@@ -28,6 +30,7 @@ public class Perro {
         this.nivelHambre = 0;
         this.estadoAnimo = "Feliz";
     }
+
 
     // Definiendo los getters y setters de los atributos
     public String getnombre(){
