@@ -29,7 +29,7 @@ public class Main {
 
         //Bucle principal del programa
         opcion=menu();
-            while(opcion != 6){
+            while(opcion !=6){
                 switch (opcion){
                     case 1: //Crear perro
                         System.out.println("Introduce el nombre del perro: ");
@@ -128,7 +128,7 @@ public class Main {
     public static int menu(){
         Scanner lector = new Scanner(System.in);
         while(true) {
-            System.out.println("1. Crear Perro \n2. Jugar con Perro \n3. Dar de comer a Perro \n4. Mandar a dormir a Perro \n5. Mostrar estado de perro \n6. Salir ");
+            System.out.println("1. Crear Perro \n2. Jugar con Perro \n3. Dar de comer a Perro \n4. Mandar a dormir a Perro \n5. Mostrar estado de Perro \n6. Salir ");
             System.out.print("\nOpcion: ");
             if(lector.hasNextInt()){
                 int opcion = lector.nextInt();
