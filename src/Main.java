@@ -110,9 +110,6 @@ public class Main {
                             sc.next();
                         }
                         break;
-                    case 6: //Salir del programa
-                        System.out.println("\t***Saliendo del juego...*** \nGracias por jugar!");
-                        break;
                     default:
                         System.out.println("\t*** ERROR: Opcion no valida ***");
 
@@ -121,6 +118,9 @@ public class Main {
                 //Volvemos a mostrar el menu principal
                 opcion=menu();
             }
+        //Salir del programa
+        System.out.println("\t*** Saliendo del juego... *** \nGracias por jugar!");
+
 
         }
       //METODOS
